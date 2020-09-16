@@ -6,5 +6,5 @@ FROM users
   INNER JOIN area ON area.areaID = users.areaID
   -- areaテーブルをareaIDでusersテーブルと連結させている。
 WHERE
-  userID >= 10 && userID < 20;
--- 条件が複数の場合は && や AND で繋ぐ。
+  userID >= 10 AND userID < 20;
+-- 条件が複数の場合は AND や && で繋ぐ。
